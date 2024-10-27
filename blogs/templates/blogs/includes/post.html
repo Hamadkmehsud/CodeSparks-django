@@ -1,0 +1,16 @@
+{% load static %}
+<li>
+  <article class="post">
+    <a href="{% url 'post-details' blog.slug %}"> 
+      <img src="{{ blog.image.url }}" alt="{{ blog.title }}"/>
+       <div class="class">
+           <h3>{{ blog.title }}</h3>
+           <p>Author: {{ blog.author }} </p>
+           <hr class="narrow-line">
+          </div>
+          <div class="class">
+        <p>{{ blog.content|truncatewords:15 }}</p>
+       </div>
+    </a>
+  </article>
+</li>

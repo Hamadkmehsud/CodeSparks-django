@@ -1,0 +1,92 @@
+/* General page settings */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding-top: 5rem; /* Space from the top, adjust based on your header/navbar */
+    background-color: #f4f4f9; /* Light background color for better contrast */
+}
+
+/* Form container styling */
+form {
+    margin: 3rem auto;
+    width: 90%; /* Updated for better mobile responsiveness */
+    max-width: 30rem; /* Maximum width of the form on larger screens */
+    padding: 1rem;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+}
+
+/* Additional margin-top for spacing under a navbar */
+form {
+    margin-top: 7rem;
+}
+
+/* Button styling */
+button {
+    cursor: pointer;
+    padding: 0.5rem 1.5rem;
+    border-radius: 6px;
+    background-color: #1f0050;
+    color: white;
+    border: 1px solid #1f0050;
+    font-size: 1rem;
+}
+
+/* Button hover and active states */
+button:hover,
+button:active {
+    background-color: #320777;
+    border-color: #320777;
+}
+
+/* Form control styling for spacing */
+.form-control {
+    margin-bottom: 1rem;
+}
+
+/* Input field styling */
+.form-control input {
+    font: inherit;
+    padding: 0.5rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    display: block;
+    width: 100%; /* Full width for input */
+    box-sizing: border-box; /* Ensures padding does not affect width */
+}
+
+/* Input focus state */
+.form-control input:focus {
+    border-color: #1f0050;
+    outline: none;
+    background-color: #f4eeff;
+}
+
+/* Label styling */
+.form-control label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #333; /* Darker color for readability */
+}
+
+/* Error message styling */
+.errorlist {
+    list-style: none;
+    margin: 0.5rem 0;
+    padding: 0;
+    color: #af0404;
+    font-size: 0.9rem;
+}
+
+/* Error styling for input fields */
+.errors input {
+    border-color: #a00303;
+    background-color: #f8d3d3;
+}
+
+/* Error styling for labels */
+.errors label {
+    color: #b80404;
+}

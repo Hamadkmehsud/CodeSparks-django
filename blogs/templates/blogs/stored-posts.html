@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %} 
+My Stored Posts
+{% endblock %} 
+
+{% block css_files %}
+<link rel="stylesheet" href="{% static "blogs/stored-posts.css" %}">
+<link rel="stylesheet" href="{% static "styles.css" %}">
+<link rel="stylesheet" href="{% static "blogs/stored-posts.css" %}">
+{% endblock %}
+
+
+{% block content %}
+  <section id="stored-posts">
+    {% if not has_posts %}
+      <p>You didn't save any posts for Favourites.</p>
+    {% endif %}
+    <ul>
+      {% for post in posts %}
+        <li><a href="{% url "post-details" post.slug %}">{{ post.title }}</a></li>
+      
+      {% endfor %}
+    </ul>
+  </section>
+{% endblock %}

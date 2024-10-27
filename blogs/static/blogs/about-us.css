@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.about-us {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centering the content horizontally */
+  height: auto; /* Allowing the section to adjust based on content */
+  padding: 50px 20px; /* Adding padding for breathing space */
+  background-color: #f5f5f5; /* Light background */
+}
+
+.about-container {
+  max-width: 800px;
+  background: #ffffff; /* White background for the container */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 30px; /* Inner padding */
+  text-align: center; /* Centering text */
+}
+
+h1, h2 {
+  color: #eeff00;
+  margin-bottom: 20px; /* Spacing between headings */
+}
+
+.highlight {
+  color: #550000; /* Highlight color */
+}
+
+.creator, .website-info, .features {
+  margin-bottom: 20px;
+}
+
+.features ul {
+  list-style-type: none; /* Removing bullets */
+  padding-left: 0; /* No padding */
+}
+
+.features li {
+  margin: 10px 0;
+}
+
+.closing {
+  font-style: italic;
+  margin-top: 30px;
+  color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-container {
+    padding: 20px; /* Adjusting padding for smaller screens */
+  }
+}

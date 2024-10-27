@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block css_files %}
+  <link rel="stylesheet" href="{% static 'styles.css' %}" />
+  {% comment %} <link rel="stylesheet" href="{% static 'userprofile/create.css' %}" /> {% endcomment %}
+{% endblock %}
+
+{% block title %} Login {% endblock %}
+
+{% block content %}
+<main class="full-page-form-style">
+    {% comment %} <form method="POST" action="" enctype="multipart/form-data"> {% endcomment %}
+        {% csrf_token %}
+        <div class="form-control">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+        </div>
+        <div class="form-control">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+
+            <button type="submit">Login Account</button>
+        </div>
+    </form>
+</main>
+{% endblock %}

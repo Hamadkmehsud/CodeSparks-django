@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block css_files %}
+  <link rel="stylesheet" href="{% static "styles.css" %}" />
+  <link rel="stylesheet" href="{% static 'userprofile/create.css' %}" />
+  <link rel="stylesheet" href="{% static 'blogs/about-us.css' %}" />
+{% endblock %}
+{% block title %}About CodeSparks {% endblock %}
+
+{% block content %}
+<section id="about-us" class="about-us">
+    <div class="about-container">
+        <h1>About <span class="highlight">CodeSparks</span></h1>
+        <div class="creator">
+            <h2>Creator: <span class="highlight">Muhammad Hammad Khan</span></h2>
+            <p>
+                I'm Muhammad Hammad Khan, a passionate web developer with a background in Computer Science.
+                Through CodeSparks, I aim to share the knowledge I’ve gained on my journey in Django, Python,
+                and web development, making it easier for others to find structured guidance and inspiration.
+            </p>
+        </div>
+
+        <div class="website-info">
+            <h2>What is CodeSparks?</h2>
+            <p>
+                CodeSparks is a platform designed to support developers at all levels, from beginners to advanced
+                programmers. It serves as a comprehensive resource for learning Django, Python, and various web
+                development techniques, offering structured tutorials, insights, and roadmaps.
+            </p>
+        </div>
+
+        <div class="features">
+            <h2>Key Features of CodeSparks</h2>
+            <ul>
+                <li><strong>Dynamic Content Management:</strong> Categorized posts with tags and popularity-based sorting.</li>
+                <li><strong>Engagement-Focused Design:</strong> Comment sections, "Read Later" functionality, and structured learning paths.</li>
+                <li><strong>SEO & Performance Optimization:</strong> Clean URLs, metadata, and optimized images for fast, responsive browsing.</li>
+                <li><strong>Responsive & Secure:</strong> CSS Flexbox design for all devices, SSL security, and regular updates for data safety.</li>
+            </ul>
+        </div>
+
+        <p class="closing">
+            CodeSparks reflects my commitment to creating a user-friendly, engaging learning platform. Thank you for exploring CodeSparks, and I’m excited to support your coding journey!
+        </p>
+    </div>
+</section>
+{% endblock %}

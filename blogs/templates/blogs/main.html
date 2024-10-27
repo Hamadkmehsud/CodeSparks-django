@@ -1,0 +1,30 @@
+{% extends "base.html" %} 
+{% load static %}
+
+
+{% block css_files %}
+  <link rel="stylesheet" href="{% static "blogs/post.css" %}" />
+  <link rel="stylesheet" href="{% static "blogs/main.css" %}" />
+   <link rel="stylesheet" href="{% static 'styles.css' %}">
+{% endblock %} 
+
+{% block content %}
+<section id="welcome">
+  <header>
+    <img src="{% static 'blogs/images/me.jpg' %}" alt="Hammad Khan - The Author Of This Blog" />
+
+  <h2>CodeSparks</h2>
+  </header>
+  <p>Hi, I am Hammad Khan, the CEO of CodeSpark, and I blog about tech and the world!</p> 
+</section>
+
+<section id="latest-posts">
+  <h2>My Latest Thoughts</h2>
+
+  <ul>
+     {% for blog in recent_blogs %}
+      {% include "blogs/includes/post.html" %}
+    {% endfor %} 
+  </ul>
+</section>
+{% endblock %}
